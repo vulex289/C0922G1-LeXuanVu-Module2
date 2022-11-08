@@ -10,18 +10,18 @@ public class tong_cac_cot_mang_2_chieu {
         int m = Integer.parseInt(sc.nextLine());
         System.out.println("Nhập vào số hàng của mảng 2 chiều");
         int n = Integer.parseInt(sc.nextLine());
-        int arr[][] = new int[m][n];
+        float arr[][] = new float[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.println("Nhập vào phần tử" + i + j);
-                arr[i][j] = Integer.parseInt(sc.nextLine());
+                arr[i][j] = Float.parseFloat(sc.nextLine());
             }
         }
         System.out.println(Arrays.deepToString(arr));
         System.out.println(sumCol(arr));
     }
 
-    public static int sumCol(int[][] a) {
+    public static float sumCol(float[][] a) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập vào số cột muốn tính tổng");
         int num = Integer.parseInt(sc.nextLine());

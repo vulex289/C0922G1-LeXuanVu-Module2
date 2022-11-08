@@ -11,15 +11,15 @@ public class max_trong_arr_2_chieu {
         int m=Integer.parseInt(sc.nextLine());
         System.out.println("Nhập vào số hàng của mảng 2 chiều");
         int n=Integer.parseInt(sc.nextLine());
-        int[][] arr = new int[m][n];
+        float[][] arr = new float[m][n];
         for(int i=0;i<m;i++){;
             for (int j=0;j<n;j++) {
                 System.out.println("Nhập vào phần tử"+i+j);
-                arr[i][j] = Integer.parseInt(sc.nextLine());
+                arr[i][j] = Float.parseFloat(sc.nextLine());
             }
         }
         System.out.println(Arrays.deepToString(arr));
-        int max=0;
+        float max=0;
         int index1=0;
         int index2=0;
         int size=arr.length;
