@@ -3,7 +3,7 @@ package ss3.exercise;
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class bai_3 {
+public class GopMang {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập vào độ dài mảng a");

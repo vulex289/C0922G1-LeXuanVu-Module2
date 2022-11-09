@@ -3,18 +3,18 @@ package ss3.exercise;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class tong_so_duong_cheo_ma_tran_vuong {
+public class TongSoDuongCheoMaTranVuong {
     public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    System.out.println("Nhập vào số cột của mảng 2 chiều");
+    System.out.println("Nhập vào số dòng của mảng 2 chiều");
     int m = Integer.parseInt(sc.nextLine());
-    System.out.println("Nhập vào số hàng của mảng 2 chiều");
+    System.out.println("Nhập vào số cột của mảng 2 chiều");
     int n = Integer.parseInt(sc.nextLine());
         while (m!=n) {
             System.out.println("Nhập vào độ dài cột và hàng bằng nhau");
             n = Integer.parseInt(sc.nextLine());
         }
-    int arr[][] = new int[m][n];
+    int[][] arr = new int[m][n];
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
             System.out.println("Nhập vào phần tử" + i + j);

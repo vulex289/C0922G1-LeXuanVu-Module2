@@ -1,7 +1,7 @@
 package ss3.exercise;
 import java.util.Scanner;
 import java.util.Arrays;
-public class bai_2 {
+public class Them1PhanTuVaoMang {
     public static void main(String[] args) {
         int []numbers = new int[10];
         int size = numbers.length;

@@ -3,7 +3,7 @@ package ss3.exercise;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class gia_tri_nho_nhat {
+public class GiaTriNhoNhatTrongMang {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập vào kích thước mảng");

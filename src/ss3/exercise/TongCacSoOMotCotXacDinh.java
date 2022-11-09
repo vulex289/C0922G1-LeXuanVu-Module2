@@ -3,14 +3,14 @@ package ss3.exercise;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class tong_cac_cot_mang_2_chieu {
+public class TongCacSoOMotCotXacDinh {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập vào số cột của mảng 2 chiều");
         int m = Integer.parseInt(sc.nextLine());
         System.out.println("Nhập vào số hàng của mảng 2 chiều");
         int n = Integer.parseInt(sc.nextLine());
-        float arr[][] = new float[m][n];
+        float [][]arr = new float[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.println("Nhập vào phần tử" + i + j);

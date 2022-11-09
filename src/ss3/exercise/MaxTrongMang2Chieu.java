@@ -1,15 +1,14 @@
 package ss3.exercise;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class max_trong_arr_2_chieu {
+public class MaxTrongMang2Chieu {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Nhập vào số cột của mảng 2 chiều");
+        System.out.println("Nhập vào số dòng của mảng 2 chiều");
         int m=Integer.parseInt(sc.nextLine());
-        System.out.println("Nhập vào số hàng của mảng 2 chiều");
+        System.out.println("Nhập vào số cot của mảng 2 chiều");
         int n=Integer.parseInt(sc.nextLine());
         float[][] arr = new float[m][n];
         for(int i=0;i<m;i++){;
