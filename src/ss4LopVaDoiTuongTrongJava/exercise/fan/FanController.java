@@ -1,8 +1,8 @@
-package ss4LopVaDoiTuongTrongJava.exercise;
+package ss4LopVaDoiTuongTrongJava.exercise.fan;
 
-import java.util.Scanner;
+import ss4LopVaDoiTuongTrongJava.exercise.fan.Fan;
 
-public class Main1 {
+public class FanController {
     public static void main(String[] args) {
         Fan fan1=new Fan(Fan.MEDIUM, false,5, "green");
         System.out.println(fan1.toString());

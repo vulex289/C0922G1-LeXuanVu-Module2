@@ -1,4 +1,4 @@
-package ss4LopVaDoiTuongTrongJava.exercise;
+package ss4LopVaDoiTuongTrongJava.exercise.fan;
 
 public class Fan {
     public static final int SLOW = 1;

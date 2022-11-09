@@ -1,4 +1,4 @@
-package ss4LopVaDoiTuongTrongJava.exercise;
+package ss4LopVaDoiTuongTrongJava.exercise.QuadraticEquation;
 
 public class QuadraticEquation {
     double a;
