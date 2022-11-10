@@ -1,4 +1,4 @@
-package ss5acessmodifiedandstatic.excercise.circle;
+package ss5acessmodifiedandstatic.excercise.access_modifier;
 
 public class Circle {
     private double radius = 1.0;
