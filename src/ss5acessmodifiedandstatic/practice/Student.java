@@ -16,6 +16,7 @@ public class Student {
         college = "CODEGYM";
     }
 
+
     //method to display values
     void display() {
         System.out.println(rollno + " " + name + " " + college);

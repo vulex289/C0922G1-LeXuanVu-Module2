@@ -4,7 +4,7 @@ public class Student {
     private String name;
     private String classes = "CO2";
     private int age;
-
+static String college="alo";
     public Student() {
     }
 
@@ -36,12 +36,16 @@ public class Student {
 
         this.classes = value;
     }
+    static void change(){
+        college="alo123";
+    }
 
     @Override
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", classes='" + classes + '\'' +
+                college+
                 ", age='" + age + '\'' +
                 '}';
     }
