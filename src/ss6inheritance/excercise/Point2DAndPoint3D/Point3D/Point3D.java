@@ -3,7 +3,7 @@ package ss6inheritance.excercise.Point2DAndPoint3D.Point3D;
 import ss6inheritance.excercise.Point2DAndPoint3D.Poidt2D.Point2D;
 
 public class Point3D extends Point2D {
-    float z;
+    private float z;
     public Point3D(){}
     public Point3D(float x,float y,float z){
         super(x, y);
