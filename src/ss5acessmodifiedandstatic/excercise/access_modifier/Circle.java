@@ -3,7 +3,9 @@ package ss5acessmodifiedandstatic.excercise.access_modifier;
 public class Circle {
     private double radius = 1.0;
     String color = "red";
-
+public static void getA(){
+    System.out.println("hello");
+}
     Circle() {
     }
 
