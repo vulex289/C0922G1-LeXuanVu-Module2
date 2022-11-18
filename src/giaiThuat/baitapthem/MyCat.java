@@ -25,7 +25,7 @@ public class MyCat {
         }
         public static void process(MyCat myCat) {
 
-            myCat.setName("Doraemon");
-            myCat=new MyCat("DOraemon");      }
+            myCat=new MyCat("DOraemon");
+            myCat.setName("Doraemon");}
     }
 

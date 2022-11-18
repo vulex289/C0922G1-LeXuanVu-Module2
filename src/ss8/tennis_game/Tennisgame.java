@@ -3,7 +3,7 @@ package ss8.tennis_game;
 import java.util.Scanner;
 
 public class Tennisgame {
-   private static String display = "";
+   private static String display ;
 public static final int ONE=1;
 public static final int TWO=2;
 public static final int THREE=3;
@@ -70,6 +70,7 @@ public static final int FOUR=4;
         }
         return display;
     }
+
 
     public static String getScore(int pointscore1, int pointscore2) {
         String result;
