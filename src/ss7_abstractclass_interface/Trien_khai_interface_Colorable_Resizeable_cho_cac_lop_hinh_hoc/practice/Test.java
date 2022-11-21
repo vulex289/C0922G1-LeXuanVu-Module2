@@ -21,6 +21,7 @@ public class Test {
                 System.out.println(c1.getArea());
                 System.out.println(c1.howToColor());
             }
+
             else if(shapes[i] instanceof Rectangle){
                 Rectangle r1 = (Rectangle) shapes[i];
                 r1.reside(percent);
@@ -28,6 +29,7 @@ public class Test {
                 System.out.println(r1.getArea());
                 System.out.println(r1.howToColor());
             }
+
             else {
                 Square sq1=(Square) shapes[i];
                 sq1.reside(percent);
@@ -37,6 +39,8 @@ public class Test {
             }
 
         }
+
     }
+
 }
 

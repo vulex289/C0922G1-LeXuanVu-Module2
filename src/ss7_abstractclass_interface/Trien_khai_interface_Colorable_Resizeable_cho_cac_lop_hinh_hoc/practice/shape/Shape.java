@@ -3,18 +3,18 @@ package ss7_abstractclass_interface.Trien_khai_interface_Colorable_Resizeable_ch
 public abstract class  Shape  {
     private String color="green";
     private boolean filled;
-    public Shape(){}
-    public Shape(String color, boolean filled){
+    protected Shape(){}
+
+    protected Shape(String color, boolean filled){
         this.color=color;
         this.filled=filled;
     }
-    public Shape(String color){
+
+    protected Shape(String color){
         this.color=color;
     }
 
-
-
-    public String getColor() {
+    protected String getColor() {
         return color;
     }
 
@@ -29,6 +29,7 @@ public abstract class  Shape  {
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
+
 @Override
     public String toString() {
         return
@@ -36,7 +37,6 @@ public abstract class  Shape  {
                 ", filled=" + filled
                 ;
     }
-
 
 }
 
