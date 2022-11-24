@@ -4,7 +4,16 @@ import java.util.*;
 
 public class abc {
     public static void main(String[] args) {
+        boolean flag = false;
+        if(2>3){
+            flag=false;
+            System.out.println("b");
+        }
 
+        if(!flag){
+            System.out.println(flag);
+            System.out.println("a");
+        }
 //        Stack<String> stack = new Stack<String>();
 //        String input = "DeftBlog";
 //        Stack<Character> stack = new Stack<>();

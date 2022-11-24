@@ -10,12 +10,12 @@ public class AlgorithmComplexityTest {
         String string = sc.nextLine();
         int[] frequentChar = new int[255];
         for (int i = 0; i < string.length(); i++) {
-            int ascii = string.charAt(i);
+            int ascii = (int)string.charAt(i);
             frequentChar[ascii]++;
         }
-        System.out.println(Arrays.toString(frequentChar));
+
         int max = 0;
-        char character = (char) 255;
+        char character = (char) 55;
         for (int j = 0; j < 255; j++) {
             if (frequentChar[j] > max) {
                 max = frequentChar[j];

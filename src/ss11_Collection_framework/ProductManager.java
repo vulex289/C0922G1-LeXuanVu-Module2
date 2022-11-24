@@ -68,16 +68,16 @@ public class ProductManager {
     }
 
     public void findName(String name) {
-        boolean isExisted=true;
+        boolean isExisted=false;
         int size = productArrayList.size();
         for (int i = 0; i < size; i++) {
             if (productArrayList.get(i).getName().equals (name)) {
-                isExisted=false;
+                isExisted=true;
                 System.out.println(productArrayList.get(i));
                 break;
             }
         }
-        if(isExisted){
+        if(!isExisted){
             System.out.println("Your name is not excited");
         }
     }

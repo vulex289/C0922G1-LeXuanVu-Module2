@@ -9,7 +9,7 @@ public class NumberOfOccurrencesOfAWordInAStringInUseMap {
     String string = sc.nextLine();
     String[] arr = string.split(" ");
 
-    TreeMap<String, Integer> stringMap = new TreeMap<>();
+    Map<String, Integer> stringMap = new HashMap<>();
       int countS = 1;
     for (int i = 0; i < arr.length; i++) {
       if (stringMap.containsKey(arr[i])) {
