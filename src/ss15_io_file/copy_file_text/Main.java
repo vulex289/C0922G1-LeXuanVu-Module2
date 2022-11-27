@@ -1,10 +1,12 @@
 package ss15_io_file.copy_file_text;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
-    public static final String FILE_NAME="D:\\codegym\\module02\\src\\ss15_io_file\\copy_file_text\\Source";
+    public static final String FILE_NAME_1="D:\\codegym\\module02\\src\\ss15_io_file\\copy_file_text\\target.csv";
+    public static final String FILE_NAME_2="D:\\codegym\\module02\\src\\ss15_io_file\\copy_file_text\\source.csv";
     public static void main(String[] args) {
-        String line="1: John 10/10/2022\n2: Nick 21/10/2022";
-        ToolIOFile.writeFile(FILE_NAME,line);
-        ToolIOFile.readFile(FILE_NAME);
+            ToolIOFile.copyFile(FILE_NAME_1,ToolIOFile.readFile(FILE_NAME_2));
     }
 }

@@ -5,6 +5,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ToolIOFile {
+    public static void copyFile(String targetFile,List<String>list){
+        try {
+            FileWriter fileWriter=new FileWriter(targetFile);
+            BufferedWriter bufferedWriter=new BufferedWriter(fileWriter);
+            for(int i=0;i<list.size();i++) {
+                bufferedWriter.write(list.get(i));
+                bufferedWriter.newLine();
+            }
+
+            bufferedWriter.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
     public static void writeFile(String partFile,String line){
         try {
             FileWriter fileWriter=new FileWriter(partFile,true);

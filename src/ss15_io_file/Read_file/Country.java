@@ -1,9 +1,9 @@
 package ss15_io_file.Read_file;
 
 public class Country {
-    String id;
-    String code;
-    String name;
+    private String id;
+    private String code;
+    private String name;
 
     public Country(String id, String code, String name) {
         this.id = id;

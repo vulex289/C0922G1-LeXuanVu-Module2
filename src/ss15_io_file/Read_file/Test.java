@@ -1,9 +1,8 @@
 package ss15_io_file.Read_file;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class main {
+public class Test {
     public static final String FILE_NAME = "D:\\codegym\\module02\\src\\ss15_io_file\\Read_file\\file.csv";
 
     public static void main(String[] args) {
