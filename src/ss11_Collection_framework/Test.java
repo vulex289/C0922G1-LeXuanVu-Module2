@@ -9,8 +9,8 @@ public class Test {
         showMenu();
         int productId;
         String productName;
-        //boolean isStop=false;
-        while (true) {
+        boolean isStop=true;
+        while (isStop) {
         System.out.println("Mời bạn nhập lựa chọn");
         int choose = Integer.parseInt(sc.nextLine());
 
@@ -38,6 +38,10 @@ public class Test {
                 break;
             case 7:
                 productManager.show();
+                break;
+            case 8:
+                isStop=false;
+                System.out.println("Exit");
                 break;
             default:
                 System.out.println("Mời bạn nhập đúng số trong menu");

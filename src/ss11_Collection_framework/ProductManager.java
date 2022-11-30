@@ -58,6 +58,7 @@ public class ProductManager {
             productArrayList.remove(product);
             show();
         }
+
     }
 
     public void show() {
