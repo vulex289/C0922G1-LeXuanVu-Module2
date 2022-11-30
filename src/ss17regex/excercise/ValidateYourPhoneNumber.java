@@ -5,7 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ValidateYourPhoneNumber {
-    public static final String REGEX_NAME_PHONENUMBER="^[(]\\d{1}\\d{1}[)]-[(]0\\d{9}[)]$";
+    public static final String REGEX_NAME_PHONENUMBER="^[(]\\d{2}[)]-[(]0\\d{9}[)]$";
 
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);

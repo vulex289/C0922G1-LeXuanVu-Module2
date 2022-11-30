@@ -6,16 +6,16 @@ public class Product implements Serializable {
     private String id;
     private String name;
     private String maker;
-    private int price;
+    private double price;
 
     public Product() {
     }
 
-    public Product(String id, String name, String maker, int price) {
+    public Product(String id, String name, String maker, double price) {
         this.id = id;
         this.name = name;
         this.maker = maker;
-        this.price=price;
+        this.price = price;
     }
 
     public String getId() {
@@ -42,11 +42,11 @@ public class Product implements Serializable {
         this.maker = maker;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
