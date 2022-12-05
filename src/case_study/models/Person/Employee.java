@@ -5,9 +5,9 @@ public class Employee extends Person {
     private String position;
     private double salary;
 
-    public Employee(int idCard, String name, String birthday, String gender, int CMND, int phoneNumber,
+    public Employee(int id, String name, String birthday, String gender, int CMND, int phoneNumber,
                     String email, String level, String position, double salary) {
-        super(idCard, name, birthday, gender, CMND, phoneNumber, email);
+        super(id, name, birthday, gender, CMND, phoneNumber, email);
         this.level = level;
         this.position = position;
         this.salary = salary;
@@ -46,7 +46,7 @@ public class Employee extends Person {
                 '}';
     }
     public String getLine(){
-        return this.getIdCard()+"," +this.getName()+","+this.getBirthday()+","+this.getGender() +","+
+        return this.getId()+"," +this.getName()+","+this.getBirthday()+","+this.getGender() +","+
                 this.getCMND() +","+this.getPhoneNumber()
         +","+ this.getEmail()+","+this.getLevel()+","+this.getPosition()+","+this.getSalary();
     }

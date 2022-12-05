@@ -1,16 +1,16 @@
 package case_study.models.Facility;
 
 public abstract class Facility {
+    private String id;
 
-    private int idFacility;
     private String nameService;
-    private String areaRoom;
+    private int areaRoom;
     private double cost;
     private int maxPeople;
 
     private String rentType;
-    Facility(int idFacility,String nameService, String areaRoom, double cost, int maxPeople,String rentType) {
-        this.idFacility=idFacility;
+    Facility(String id,String nameService, int areaRoom, double cost, int maxPeople,String rentType) {
+        this.id=id;
         this.nameService = nameService;
         this.areaRoom = areaRoom;
         this.cost = cost;
@@ -18,12 +18,12 @@ public abstract class Facility {
         this.rentType=rentType;
     }
 
-    public int getIdFacility() {
-        return idFacility;
+    public String getId() {
+        return id;
     }
 
-    public void setIdFacility(int idFacility) {
-        this.idFacility = idFacility;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getRentType() {
@@ -42,11 +42,11 @@ public abstract class Facility {
         this.nameService = nameService;
     }
 
-    public String getAreaRoom() {
+    public int getAreaRoom() {
         return areaRoom;
     }
 
-    public void setAreaRoom(String areaRoom) {
+    public void setAreaRoom(int areaRoom) {
         this.areaRoom = areaRoom;
     }
 
@@ -68,13 +68,12 @@ public abstract class Facility {
 
     @Override
     public String toString() {
-        return
-                "idFacility=" + idFacility +
+        return "id=" + id +
                 ", nameService='" + nameService + '\'' +
                 ", areaRoom='" + areaRoom + '\'' +
                 ", cost=" + cost +
                 ", maxPeople=" + maxPeople +
                 ", rentType='" + rentType + '\'';
-
     }
+
 }

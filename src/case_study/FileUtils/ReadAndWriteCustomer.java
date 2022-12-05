@@ -41,6 +41,7 @@ public class ReadAndWriteCustomer {
                 bufferedWriter.newLine();
             }
             bufferedWriter.close();
+            fileWriter.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

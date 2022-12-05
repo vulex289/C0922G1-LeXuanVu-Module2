@@ -6,8 +6,8 @@ public class Villa extends Facility {
     private String roomStandard;
     private double areaPool;
     private int floorNumber;
-    public Villa(int idFacility,String nameService, String areaRoom, double cost, int maxPeople,String rentType,String roomStandard,double areaPool,int floorNumber) {
-        super(idFacility,nameService, areaRoom, cost, maxPeople,rentType);
+    public Villa(String id,String nameService, int areaRoom, double cost, int maxPeople,String rentType,String roomStandard,double areaPool,int floorNumber) {
+        super(id,nameService, areaRoom, cost, maxPeople,rentType);
         this.roomStandard=roomStandard;
         this.areaPool=areaPool;
         this.floorNumber=floorNumber;
@@ -46,7 +46,7 @@ public class Villa extends Facility {
                 '}';
     }
     public String getLine(){
-        return this.getIdFacility()+","+this.getNameService()+","+this.getAreaRoom()+","+this.getCost()+","+this.getMaxPeople()
+       return this.getId()+","+this.getNameService()+","+this.getAreaRoom()+","+this.getCost()+","+this.getMaxPeople()
                 +","+this.getRentType()+","+this.getRoomStandard()+","+this.getAreaPool()+","+this.floorNumber;
     }
 }

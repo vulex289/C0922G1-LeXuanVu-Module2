@@ -3,9 +3,9 @@ package case_study.models.Person;
 public class Customer extends Person{
     private String guestType;
     private String address;
-    public Customer(int idCard, String name, String birthday, String gender, int CMND,
+    public Customer(int id, String name, String birthday, String gender, int CMND,
                     int phoneNumber, String email, String guestType,String address) {
-        super(idCard, name, birthday, gender, CMND, phoneNumber, email);
+        super(id, name, birthday, gender, CMND, phoneNumber, email);
         this.guestType=guestType;
         this.address=address;
     }
@@ -34,7 +34,7 @@ public class Customer extends Person{
                 '}';
     }
     public String getLine(){
-        return this.getIdCard()+","+this.getName()+","+this.getBirthday()+","+this.getGender()
+        return this.getId()+","+this.getName()+","+this.getBirthday()+","+this.getGender()
                 +","+this.getCMND()+","+this.getPhoneNumber()+","+this.getEmail()+","+this.getGuestType()+","+this.getAddress();
     }
 }
