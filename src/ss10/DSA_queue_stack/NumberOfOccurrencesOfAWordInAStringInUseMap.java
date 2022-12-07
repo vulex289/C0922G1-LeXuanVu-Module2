@@ -19,7 +19,6 @@ public class NumberOfOccurrencesOfAWordInAStringInUseMap {
         countS=1;
       }
       stringMap.put(arr[i], countS);
-
     }
     System.out.println("Chuỗi kí tự trùng nhau");
     System.out.println(stringMap);
