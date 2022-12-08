@@ -2,6 +2,7 @@ package case_study.view;
 
 import case_study.controller.CustomerManagementController;
 import case_study.models.Person.Customer;
+import case_study.services.impl.CustomerServiceImpl;
 
 import java.util.List;
 import java.util.Scanner;
@@ -13,11 +14,18 @@ public class CustomerManagementMenu {
     public void showCustomerManagement() {
         boolean isExit2 = true;
         while (isExit2) {
-            System.out.println("1.Display list customers");
-            System.out.println("2.Add new customer");
-            System.out.println("3.Edit customer");
-            System.out.println("4.Return main menu");
-            option = Integer.parseInt(scanner.nextLine());
+            while (true) {
+                System.out.println("1.Display list customers");
+                System.out.println("2.Add new customer");
+                System.out.println("3.Edit customer");
+                System.out.println("4.Return main menu");
+                try {
+                    option = Integer.parseInt(scanner.nextLine());
+                    break;
+                } catch (NumberFormatException e) {
+                    System.out.println(e.getMessage());
+                }
+            }
             switch (option) {
                 case 1:
                     List<Customer> customers=customerManagementController.getInfor();
@@ -54,26 +62,36 @@ public class CustomerManagementMenu {
                 case 3:
                     System.out.println("Nhập vào id khách hàng");
                     int newIdCard=Integer.parseInt(scanner.nextLine());
-                    System.out.println("Nhập vào tên khách hàng");
-                    String newName=scanner.nextLine();
-                    System.out.println("Nhập vào ngày sinh nhật");
-                    String newBirthday=scanner.nextLine();
-                    System.out.println("Nhập vào giới tính");
-                    String newGender=scanner.nextLine();
-                    System.out.println("Nhập vào số CMND");
-                    int newCMND=Integer.parseInt(scanner.nextLine());
-                    System.out.println("Nhập vào số điện thoại");
-                    int newPhoneNumber=Integer.parseInt(scanner.nextLine());
-                    System.out.println("Nhập vào email");
-                    String newEmail=scanner.nextLine();
-                    System.out.println("Nhập vào loại khách");
-                    String newGuestType=scanner.nextLine();
-                    System.out.println("Nhập vào địa chỉ của khách");
-                    String newAddress=scanner.nextLine();
-                    System.out.println("Nhập vào mức lương");
-                    Customer newCustomer=new Customer(newIdCard,newName,newBirthday,newGender,newCMND,newPhoneNumber,newEmail,
-                            newGuestType,newAddress);
-                    customerManagementController.update(newCustomer);
+                    List<Customer>customerList=customerManagementController.getInfor();
+                    int count=0;
+                    for (Customer customer1:customerList){
+                     if(customer1.getId()!=newIdCard){
+                         count++;
+                     }
+                    }
+                    if(count==customerList.size()){
+                        System.out.println("Bạn không nhập đúng id cần sửa");
+                    }else {
+                        System.out.println("Nhập vào tên khách hàng");
+                        String newName = scanner.nextLine();
+                        System.out.println("Nhập vào ngày sinh nhật");
+                        String newBirthday = scanner.nextLine();
+                        System.out.println("Nhập vào giới tính");
+                        String newGender = scanner.nextLine();
+                        System.out.println("Nhập vào số CMND");
+                        int newCMND = Integer.parseInt(scanner.nextLine());
+                        System.out.println("Nhập vào số điện thoại");
+                        int newPhoneNumber = Integer.parseInt(scanner.nextLine());
+                        System.out.println("Nhập vào email");
+                        String newEmail = scanner.nextLine();
+                        System.out.println("Nhập vào loại khách");
+                        String newGuestType = scanner.nextLine();
+                        System.out.println("Nhập vào địa chỉ của khách");
+                        String newAddress = scanner.nextLine();
+                        Customer newCustomer = new Customer(newIdCard, newName, newBirthday, newGender, newCMND, newPhoneNumber, newEmail,
+                                newGuestType, newAddress);
+                        customerManagementController.update(newCustomer);
+                    }
                     break;
                 case 4:
                     isExit2 = false;

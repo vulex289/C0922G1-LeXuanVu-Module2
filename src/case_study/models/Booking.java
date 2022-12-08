@@ -65,4 +65,8 @@ public class Booking {
                 ", nameService='" + nameService + '\'' +
                 '}';
     }
+    public String getLine(){
+        return this.getIdBooking()+","+this.getStartDay()+","
+                +this.getEndDay()+","+this.getIdCustomer()+","+this.getNameService();
+    }
 }

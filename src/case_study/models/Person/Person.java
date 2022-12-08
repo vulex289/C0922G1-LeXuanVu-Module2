@@ -9,7 +9,7 @@ public abstract class  Person {
     private int phoneNumber;
     private String email;
 
-    public Person(int idCard, String name, String birthday, String gender, int CMND, int phoneNumber, String email) {
+    protected Person(int idCard, String name, String birthday, String gender, int CMND, int phoneNumber, String email) {
         this.id = idCard;
         this.name = name;
         this.birthday = birthday;

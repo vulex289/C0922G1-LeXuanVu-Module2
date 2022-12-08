@@ -5,14 +5,13 @@ import case_study.FileUtils.ReadAndWriteVilla;
 import case_study.models.Facility.Facility;
 import case_study.models.Facility.Room;
 import case_study.models.Facility.Villa;
-import case_study.services.FacilityService;
+import case_study.services.IFacilityService;
 
-import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-public class FacilityServiceImpl implements FacilityService {
+public class FacilityServiceImpl implements IFacilityService {
 
     public static final String FILE_NAME_ROOM = "src/case_study/data/Room.csv";
     public static final String FILE_NAME_VILLA = "src/case_study/data/Villa.csv";

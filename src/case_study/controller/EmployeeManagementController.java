@@ -1,7 +1,7 @@
 package case_study.controller;
 
 import case_study.Exception.ExistException;
-import case_study.Exception.NotFoundEmployeeException;
+import case_study.Exception.NotFoundObjectException;
 import case_study.models.Person.Employee;
 import case_study.services.impl.EmployeeServiceImpl;
 
@@ -25,7 +25,7 @@ public class EmployeeManagementController {
     public void delete(int id){
         try {
             this.employeeService.delete(id);
-        } catch (NotFoundEmployeeException e) {
+        } catch (NotFoundObjectException e) {
             System.out.println(e.getMessage());
         }
     }

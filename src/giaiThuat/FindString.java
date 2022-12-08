@@ -10,7 +10,7 @@ public class FindString {
         String[] arr = {"flower", "flow", "flight"};
         String a = "";
         for (int i = 0; i < arr.length; i++) {
-                    a += arr[i];
+            a += arr[i];
         }
         String[] line = a.split("");
         Map<String, Integer> map = new LinkedHashMap<>();

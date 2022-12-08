@@ -9,13 +9,14 @@ public abstract class Facility {
     private int maxPeople;
 
     private String rentType;
-    Facility(String id,String nameService, int areaRoom, double cost, int maxPeople,String rentType) {
-        this.id=id;
+
+   protected Facility(String id, String nameService, int areaRoom, double cost, int maxPeople, String rentType) {
+        this.id = id;
         this.nameService = nameService;
         this.areaRoom = areaRoom;
         this.cost = cost;
         this.maxPeople = maxPeople;
-        this.rentType=rentType;
+        this.rentType = rentType;
     }
 
     public String getId() {
@@ -68,12 +69,12 @@ public abstract class Facility {
 
     @Override
     public String toString() {
-        return "id=" + id +
-                ", nameService='" + nameService + '\'' +
-                ", areaRoom='" + areaRoom + '\'' +
-                ", cost=" + cost +
-                ", maxPeople=" + maxPeople +
-                ", rentType='" + rentType + '\'';
+        return id +
+                "," + nameService +
+                "," + areaRoom +
+                ", " + cost +
+                ", " + maxPeople +
+                "," + rentType;
     }
 
 }

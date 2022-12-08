@@ -15,7 +15,8 @@ public class ReadAndWriteVilla {
         try {
             fileWriter=new FileWriter(pathFile);
             bufferedWriter=new BufferedWriter(fileWriter);
-           // bufferedWriter.write("ID,nameService,rentType,roomStandard,areaPool,floorNumber");
+            bufferedWriter.write("ID,nameService,rentType,roomStandard,areaPool,floorNumber");
+            bufferedWriter.newLine();
             for (Map.Entry<Villa,Integer>element:villaIntegerMap.entrySet()) {
                 bufferedWriter.write(element.getKey().getLine()+","+element.getValue().toString());
                 bufferedWriter.newLine();
@@ -35,11 +36,11 @@ public class ReadAndWriteVilla {
         Map<Villa,Integer>villaIntegerMap= new LinkedHashMap<>();
         FileReader fileReader= null;
         BufferedReader bufferedReader=null;
-        //String line1="ID,nameService,rentType,roomStandard,areaPool,floorNumber";
+
         try {
             fileReader = new FileReader(pathFile);
             bufferedReader=new BufferedReader(fileReader);
-           // line1=bufferedReader.readLine();
+            bufferedReader.readLine();
             String line;
             while ((line = bufferedReader.readLine()) != null){
                 String []item=line.split(",");

@@ -1,3 +1,2 @@
-SVVL-1234,Villa,24,24.0,24,Month,Gold,24.0,2,0
-SVVL-1234,Room,24,500.0,14,Month,Hang,31.0,2,0
-
+ID,nameService,rentType,roomStandard,areaPool,floorNumber
+SVVL-0001,Villa,32,32000.0,10,Day,Sv,32.0,2,0

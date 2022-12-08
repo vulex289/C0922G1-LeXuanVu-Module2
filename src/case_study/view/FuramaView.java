@@ -14,9 +14,16 @@ public class FuramaView {
 
     public void displayMainMenu() {
         isExit = true;
-        while (true) {
+        while (isExit) {
             showMenu();
-            optionMenu = Integer.parseInt(scanner.nextLine());
+            while (true) {
+                try {
+                    optionMenu = Integer.parseInt(scanner.nextLine());
+                    break;
+                } catch (NumberFormatException e) {
+                    System.err.println("Bạn đã nhập sai");
+                }
+            }
             switch (optionMenu) {
                 case 1:
                     employeeManagementMenu.showEmployeeManagement();

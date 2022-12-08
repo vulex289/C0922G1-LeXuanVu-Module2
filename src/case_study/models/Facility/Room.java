@@ -1,7 +1,5 @@
 package case_study.models.Facility;
 
-import case_study.models.Facility.Facility;
-
 public class Room extends Facility {
     private String freeService;
 
@@ -24,8 +22,14 @@ public class Room extends Facility {
                 "freeService='" + freeService + '\'' +
                 '}';
     }
-    public String getLine(){
-        return this.getId()+","+ this.getNameService()+","+this.getAreaRoom()+","+this.getCost()+","+this.getMaxPeople()
-                +","+this.getRentType()+","+this.freeService;
+    public StringBuilder getLine(){
+//        return this.getId()+","+ this.getNameService()+","+this.getAreaRoom()+","+this.getCost()+","+this.getMaxPeople()
+//                +","
+//                +this.getRentType()+","+this.getFreeService();
+        StringBuilder stringBuilder=new StringBuilder();
+         stringBuilder.append(this.getId()).append(",").append(this.getNameService()).append(",").
+                 append(this.getAreaRoom()).append(",").append(this.getCost()).append(",").
+                append(this.getMaxPeople()).append(",").append(this.getRentType()).append(",").append(this.getFreeService());
+         return stringBuilder;
     }
 }
